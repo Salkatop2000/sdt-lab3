@@ -11,9 +11,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	console.log('Congratulations, your extension "sdt-lab3" is now active!');
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
+	// ганарирует блок if
 	const ifCommand = vscode.commands.registerCommand('sdt-lab3.if-gener', () => {
 		const gener = vscode.window.activeTextEditor;
 		if (gener) {
@@ -22,6 +20,8 @@ export function activate(context: vscode.ExtensionContext) {
 			});
 		}
 	});
+
+	// ганарирует блок else
 	const elseCommand = vscode.commands.registerCommand('sdt-lab3.else-gener', () => {
 		const gener = vscode.window.activeTextEditor;
 		if (gener) {
@@ -30,6 +30,8 @@ export function activate(context: vscode.ExtensionContext) {
 			});
 		}
 	});
+
+	// ганарирует блоки if и else
 	const ifelseCommand = vscode.commands.registerCommand('sdt-lab3.if-else-gener', () => {
 		const gener = vscode.window.activeTextEditor;
 		if (gener) {
@@ -38,6 +40,8 @@ export function activate(context: vscode.ExtensionContext) {
 			});
 		}
 	});
+
+	// ганарирует блок for
 	const forCommand = vscode.commands.registerCommand('sdt-lab3.for-gener', () => {
 		const gener = vscode.window.activeTextEditor;
 		if (gener) {
@@ -46,6 +50,8 @@ export function activate(context: vscode.ExtensionContext) {
 			});
 		}
 	});
+
+	// ганарирует блок while
 	const whileCommand = vscode.commands.registerCommand('sdt-lab3.while-gener', () => {
 		const gener = vscode.window.activeTextEditor;
 		if (gener) {
