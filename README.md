@@ -1,3 +1,5 @@
+# Сальников M3103
+
 # sdt-lab3 README
 
 Это плагин для генерации блоков if, else, for и while
